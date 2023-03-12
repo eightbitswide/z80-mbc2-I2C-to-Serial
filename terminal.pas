@@ -3,7 +3,7 @@
 
   Terminal setup for local echo.
 
-  Keyboard input ccode by David Collins
+  Keyboard input code by David Collins
 }
 
 
@@ -22,7 +22,7 @@ Terminal:
 
 clk:=clk+1;
 
-if clk = 25 then begin
+if clk = 10 then begin
   port[1]:=130;
   datain:=port[0];
   if datain = 255 then datain:=0;
