@@ -35,8 +35,8 @@ void sendEvent()
    int x = Serial.read(); 
 
    if (x > 0){ Wire.print(char(x)); }
-   if (x > 13) { Serial.print(char(x)); }  
-   if (x == 13) { Serial.println(char(x)); } 
+   if (x > 13) { Serial.print(char(x)); }      //remove or remark this line for full duplex.
+   if (x == 13) { Serial.println(char(x)); }   //remove or remark this line for full duplex.
        
  }  
 
