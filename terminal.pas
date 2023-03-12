@@ -22,7 +22,7 @@ Terminal:
 
 clk:=clk+1;
 
-if clk = 200 then begin
+if clk = 25 then begin
   port[1]:=130;
   datain:=port[0];
   if datain = 255 then datain:=0;
@@ -37,7 +37,7 @@ if key = 27 then halt;
 if key = 13 then writeln('');
 
 if key > 0 then begin
- write(char(key));
+write(char(key));  {remove/remark this line for full duplex}
  port[1]:=3;
  port[0]:=key;
  key:=0;
