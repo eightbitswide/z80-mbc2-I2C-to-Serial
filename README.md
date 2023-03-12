@@ -1,4 +1,6 @@
 # z80-mbc2-I2C-to-Serial
+
+Need another serial port for your Z80-MBC2?
 Use the IOEXP port on the Z80-MBC2 to establish a I2C to Serial via an Arduino.
 
 This provides a terminal program which will compile using Turbo Pascal 3,
